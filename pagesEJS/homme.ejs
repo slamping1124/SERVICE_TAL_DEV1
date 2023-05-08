@@ -1,0 +1,27 @@
+<%- include ('./partiels/erreurs_msg.ejs') %>  
+
+
+    
+
+   
+
+    <table>
+      <tr>
+         <th>type</th>
+         <th>genre</th>
+         <th>prix</th>
+        
+      </tr>  
+     <% for (let unProduit of produits){ %>
+      <tr>
+        <td> <%= unProduit.type %> </td>
+        <td><%= unProduit.genre %></td>
+        <td><%= unProduit.prix %></td>  
+       
+      </tr>
+      <% } %> 
+         
+        </table>      
+      
+    
+
